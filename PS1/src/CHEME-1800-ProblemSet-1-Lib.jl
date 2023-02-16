@@ -1,13 +1,12 @@
 """
     encrypt(plaintext::String) -> Dict{Int64,String}
    
-    This function encrypts a given plaintext message using a mapping of each character to a DNA code,
-    with the output returned as a dictionary. It first creates an empty dictionary message to store 
-    the encrypted message and sets the counter variable to zero. The function then creates an encryptionkey
-    by calling a function _build with DNAEncryptionKey. The for loop runs through each character 
-    in the plaintext string by first mapping it to a corresponding DNA code in the encryptionkey and then 
-    adding the code to the message dictionary at the current position, which is tracked by the counter. 
-    Finally, the function returns the message dictionary containing the encrypted message.
+    This function encrypts a plaintext message by mapping each character to a DNA code,
+    It first creates an empty dictionary message to store the encrypted message and sets the counter variable to zero. 
+    The function then creates an encryptionkey by calling a function _build with DNAEncryptionKey. The for loop runs through each character 
+    in the plaintext string by mapping it to a corresponding DNA code in the encryptionkey and then 
+    adding the code to the message dictionary at the current position tracked by the counter. 
+    Finally, the function returns the message dictionary containing the encrypted message. 
 """
 
 function encrypt(plaintext::String)::Dict{Int64,String}
